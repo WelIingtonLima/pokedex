@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body{
+    background-image: url('../Images/fundo.gif');
+    background-size:130%;
+    background-position:center center;
+    min-height: 100%;
+    text-align: center;
+    background-attachment: fixed;
+    
+    
+    
+}
+
+main{
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+   
+}
+
+/*--Pokemon Types--*/
+
+.Type{
+    position: absolute;
+    left:69%;
+    bottom: 75%;
+    transform: translate(-63%, 20%);
+    height: 4%;
+    width: 18%;
+    border-radius: 2px;
+    box-shadow: -2px 2.5px 0 #535353;
+    z-index: 9;
+}
+
+.Empty{
+    background-image: url(../Images/types/Empty.png);
+    background-size: 100%;
+}
+
+.Normal{
+    background-image: url(../Images/types/Normal.png);
+    background-size: 100%;
+}
+
+.Fire{
+    background-image: url(../Images/types/Fire.png);
+    background-size: 100%;
+}
+
+.Bug{
+    background-image: url(../Images/types/Bug.png);
+    background-size: 100%;
+}
+
+.Dark{
+    background-image: url(../Images/types/Dark.png);
+    background-size: 100%;
+}
+
+.Dragon{
+    background-image: url(../Images/types/Dragon.png);
+    background-size: 100%;
+}
+
+.Electric{
+    display: block;
+    background-image: url(../Images/types/Electric.png);
+    background-size: 100%;
+}
+
+.Fairy{
+    background-image: url(../Images/types/Fairy.png);
+    background-size: 100%;
+}
+
+.Fighting{
+    background-image: url(../Images/types/Fighting.png);
+    background-size: 100%;
+}
+
+.Flying{
+    background-image: url(../Images/types/Flying.png);
+    background-size: 100%;
+}
+
+.Ghost{
+    background-image: url(../Images/types/Ghost.png);
+    background-size: 100%;
+}
+
+.Grass{
+    background-image: url(../Images/types/Grass.png);
+    background-size: 100%;
+}
+
+.Ground{
+    background-image: url(../Images/types/Ground.png);
+    background-size: 100%;
+}
+
+.Ice{
+    background-image: url(../Images/types/Ice.png);
+    background-size: 100%;
+}
+
+.Poison{
+    background-image: url(../Images/types/Poison.png);
+    background-size: 100%;
+}
+
+.Psychic{
+    background-image: url(../Images/types/Psychic.png);
+    background-size: 100%;
+}
+
+.Rock{
+    background-image: url(../Images/types/Rock.png);
+    background-size: 100%;
+}
+
+.Steel{
+    background-image: url(../Images/types/Stell.png);
+    background-size: 100%;
+}
+
+.Water{
+    background-image: url(../Images/types/Water.png);
+    background-size: 100%;
+}
+
+/*--End Pokemon Types--*/
+
+.pokedex{
+    width: 100%;
+    max-width: 425px;
+}
+
+.pokemon_image{
+    position: absolute;
+    left:50%;
+    bottom: 55%;
+    transform: translate(-63%, 20%);
+    height: 18%;
+}
+
+.pokemon_data{
+    font-size: clamp(5px, 4vw, 25px);
+   position: absolute;
+   font-weight: 600;
+   color: #aaa;
+   top: 54.5%;
+   right: 27%; 
+
+}
+
+.pokemon_name{
+    color: #3a444d ;
+    text-transform: capitalize;
+}
+
+.form{
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+    text-align: center;
+}
+
+.input_search{
+    width: 100%;
+    padding: 3%;
+    outline: none;
+    border: 3px solid #333;
+    border-radius: 5px;
+    font-weight: 800;
+    color: #3a444d;
+    font-size: clamp(5px, 4vw, 1rem);
+    box-shadow: -3px 3px 0 #888, -5px 6px #333;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+.button{
+    width: 50%;
+    padding: 4%;
+    border:2px  solid #000;
+    border-radius: 5px;
+    font-size: clamp(5px, 4vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+
+}
+
+.button:active{
+   box-shadow: inset -4px 4px 0 #222;
+   font-size: 0.9rem;
+}
