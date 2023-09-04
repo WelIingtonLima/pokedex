@@ -7,8 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/png" sizes="16x16"  href="./Favicons/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     
     <!--Main JS-->
     <script defer src="./js/script.js"></script>
@@ -18,29 +24,66 @@
 </head>
 <body>
     <main>
-        <div id="pokemon_type" class="Type Grass"></div>
-       
-        <img src="#" alt="pokedex" class="pokemon_image">
+        <div class="container">
+            <div class="container_1">
+                <div class="lamp1 flicker-1"> </div>
+                <div id="info" class=" info"><p>i</p></div>
+            
+                <img src="#" alt="pokedex" class=" pokemon_image">
+                
+                <h1 class=" pokemon_data">
+                    <span class=" pokemon_number"></span> -
+                    <span class=" pokemon_name"></span>
+                </h1>
+                <form class=" form">
+                    <input 
+                        type="search"
+                        class="input_search"
+                        placeholder="Name or Number"
+                        required
+                    />
+                </form>
+                <div class=" buttons">
+                    <button class=" button btn-prev">&lt; Prev</button>
+                    <button class=" button btn-next">Next &gt;</button>
+                </div>
+                <img src="Images/pokedex.png" alt="pokedex" class="pokedex">
+            </div>
+
+
+            <div class="container_2 right w50">
+                <div class="cp">CP:
+                    <span class="cp"></span>
+                </div>
+                <div class="lamp2 flicker-1"> </div>
+
+                <div id="pokemon_type" class="Type Grass"></div>
+                <div id="pokemon_type2" class="Type2 Poison"></div>
+                <img src="Images/pokedex_2.png" alt="pokedex" class="pokedex">
+                
+                <div class="stats">
+
+                    ✨ Abilities: <span class="abilities1"></span></br>
+                    ✨ Abilities: <span class="abilities2"></span></br>
+                    ❤️ HP: <span class="hp">45</span></br>
+                    🔥 Attack: <span class="attack">49</span></br>
+                    🛡️ Defese: <span class="defese">49</span></br>
+                    ⚖️ Weight: <span class="weight">69</span> 
+                    
+
+                </div><!--stats-->
+
+
+            </div><!--container_2-->
+            
+            <a href="https://www.linkedin.com/in/wellingtonlima37/" target="_blank" class=" penSing">Wellington Lima</a>
+            
+        </div><!--container-->
         
-        <h1 class="pokemon_data">
-            <span class="pokemon_number"></span> -
-            <span class="pokemon_name"></span>
-        </h1>
-        <form class="form">
-            <input 
-                type="search"
-                class="input_search"
-                placeholder="Name or Number"
-                required
-            />
-        </form>
-
-        <div class="buttons">
-            <button class="button btn-prev">&lt; Prev</button>
-            <button class="button btn-next">Next &gt;</button>
-        </div>
-
-        <img src="Images/pokedex.png" alt="pokedex" class="pokedex">
-    </main>
+        
+        <div class="clear"></div>
+    </main> 
 </body>
+
+<div class="sing">GIF By Wellington Lima</div>
 </html>
