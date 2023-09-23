@@ -5,20 +5,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oxanium', cursive;
+    
 }
-
+html{
+    cursor: url('/Images/cursor/left_ptr.png'), default;
+    overflow: hidden;
+}
 body{
+    cursor: url('/Images/cursor/left_ptr.png'), default;
     background-image: url('../Images/fundo.gif');
     background-size: auto;
     background-repeat:no-repeat;
     background-position-y: -90px;
     background-color: #81b771;
-    
-    text-align: center;
-    
-    
-    
-    
+    text-align: center;   
 }
 
 main{
@@ -29,6 +29,21 @@ main{
     transform: translate(-50%, -50%)
    
 }
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+
 
 .container_1{
     display: block;
@@ -58,6 +73,21 @@ main{
 
 .clear{
     clear: both;
+}
+
+.instructions{
+    display: inline-block;
+    position: absolute;
+    background: rgba(255, 60, 60, 0.445);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 3px solid #d40040;
+    width: 70%;
+    height: 15%;
+    top: 108%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .cp{
@@ -112,6 +142,28 @@ main{
     box-shadow: -2px 2.5px 0 #535353;
 }
 
+.linkedin{
+    display: none;
+    position: absolute;
+    left:67%;
+    bottom: 8%;
+    transform: translate(-63%, 20%);
+    height: 6%;
+    width: 12%;
+    cursor: url('/Images/cursor/hand2.png'), pointer;
+}
+
+.github{
+    display: none;
+    position: absolute;
+    left:82%;
+    bottom: 8%;
+    transform: translate(-63%, 20%);
+    height: 6%;
+    width: 12%;
+    cursor: url('/Images/cursor/hand2.png'), pointer;
+}
+
 .lamp1{
     position: absolute;
     background: rgba(13,238,244);
@@ -136,6 +188,15 @@ main{
     height: 18%;
 }
 
+.wellImage{
+    display: none;
+    position: absolute;
+    left:50%;
+    bottom: 53.1%;
+    transform: translate(-63%, 20%);
+    height: 23%;
+}
+
 .pokemon_data{
    font-size: clamp(5px, 4vw, 25px);
    position: absolute;
@@ -152,16 +213,14 @@ main{
 }
 
 .info{
-    cursor: pointer;
+    cursor: url('/Images/cursor/hand2.png'), pointer;
     position: absolute;
     left:75%;
     bottom: 84%;
     transform: translate(-63%, 20%);
     height: 8%;
     width: 12.5%;
-    border-radius: 10%;
-    background-color: #e3e3e3;
-    
+    border-radius: 10%;   
     background-color: #444;
     box-shadow: -2px 3px 0 #222, -3px 5px 0 #000;
     border:1px  solid #000;
@@ -174,6 +233,38 @@ main{
     text-align: center;
 }
 
+.musicON{
+    position: absolute;
+    display: none;
+}
+
+.musicOFF{
+    position: absolute;
+    display: block;
+}
+
+.music{
+    cursor: url('/Images/cursor/hand2.png'), pointer;
+    position: absolute;
+    left:50%;
+    bottom: 88%;
+    transform: translate(-50%, 12%);
+    height: 45px;
+    width: 45px;
+    border-radius: 10%;  
+    background-color: #ffbb00;
+    
+    border:3px  solid #c08d00;
+}
+
+.music img{
+    width: 30px;
+    top: -45%;
+    left: 12%;
+    transform: translateX(75%);
+    transform: translateY(100%);
+}
+
 .form{
     position: absolute;
     width: 65%;
@@ -183,6 +274,7 @@ main{
 }
 
 .input_search{
+    cursor: url('/Images/cursor/xterm.png'),text;
     width: 100%;
     padding: 3%;
     outline: none;
@@ -196,7 +288,7 @@ main{
 
 .buttons{
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 50%;
     width: 65%;
     transform: translate(-57%, 0);
@@ -215,18 +307,37 @@ main{
     color: white;
     background-color: #444;
     box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
-    cursor: pointer;
+    cursor: url('/Images/cursor/hand2.png'), pointer;
 
 }
 
 .button:active{
-   box-shadow: inset -4px 4px 0 #222;
-   font-size: 0.9rem;
+    cursor: url('/Images/cursor/hand4.png'), pointer;
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
+
+.music:active{
+    cursor: url('/Images/cursor/hand4.png'), pointer;
+    box-shadow: inset -4px 4px 0 #a88100;
+    
+}
+
+.music:active img{
+    top: -25%;
+    left: 17%;
+    transform: translateX(100%);
+    transform: translateY(100%);
+    width: 25px;
+    padding-right: 2.5px;
 }
 
 .info:active{
-   box-shadow: inset -4px 4px 0 #222;
-   font-size: 0.9rem;
+    cursor: url('/Images/cursor/hand4.png'), pointer;
+}
+
+.linkedin:active{
+    cursor: url('/Images/cursor/hand4.png'), pointer;
 }
 
 .lamp2{
@@ -247,20 +358,89 @@ main{
     font-size:35px;
     left: 1%;
     bottom: 1%;
+    cursor: url('/Images/cursor/left_ptr.png'), default;
 }
 
 .penSing{
     position: absolute;
     font-family: 'Caveat', cursive;
-    color: #000;
+    color: #6d0b0b;
     font-size: clamp(10px, 2vw, 1.7rem);
     bottom: 3.5%;
     left: 8%;
-    text-decoration: none;
+}
 
+.teamRocket{    
+    position: absolute;
+
+    left: 40px;
+    top: 630px;
+}
+
+.memberRocket{
+    position: absolute;
+    display: block;
+    width: 150PX;
+    bottom: -80px;
+    transform: translateY(0) rotateX(0deg);
+}
+
+.bush   {
+    cursor: url('/Images/cursor/hand3.png'), pointer;
+    position: absolute;
+    width: 250PX;
+    top: 0px;
+}
+
+.bush:active{
+    cursor: url('/Images/cursor/hand5.png'), pointer;
+}
+
+.jigglypuff-box{
+    position: absolute;
+    left: 1300px;
+    top: 670px;
+    width: 150px;
+    align-items: center;
+    text-align: center;
+    cursor: url('/Images/cursor/microfone.png'), pointer;
+}
+
+.jigglypuff{
+    position: absolute;
+    width: 130px;
+    z-index: 2;
+}
+
+.jigglyShadow{
+    position: absolute;
+    width: 100px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    left: 93px;
+    top: 115px;
+    
+    
 }
 
 
+  
+@keyframes shake-horizontal {
+        0%, 100% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-10px);
+        }
+        50% {
+          transform: translateX(10px);
+        }
+        75% {
+          transform: translateX(-10px);
+        }
+      }
+  
 /*-------------------------END---------------------------*/
 
 
@@ -308,13 +488,21 @@ main{
 
 }
 
+.backActive.wellImage{
+    position: absolute;
+    left:25%;
+    bottom: 53.2%;
+    transform: translate(-63%, 20%);
+    height: 23%;
+}
+
 .pokemon_name{
     color: #3a444d ;
     text-transform: capitalize;
 }
 
 .backActive.info{
-    cursor: pointer;
+    cursor: url('/Images/cursor/hand2.png'), pointer;
     position: absolute;
     left:38%;
     bottom: 84%;
@@ -347,7 +535,7 @@ main{
 
 .backActive.buttons{
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 26%;
     width: 35%;
     transform: translate(-57%, 0);
@@ -357,14 +545,15 @@ main{
 }
 
 .info:active{
-   box-shadow: inset -4px 4px 0 #222;
-   font-size: 0.9rem;
+    cursor: url('/Images/cursor/hand4.png'), pointer;
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
 }
 
 .backActive.penSing{
     position: absolute;
     font-family: 'Caveat', cursive;
-    color: #000;
+    color: #6d0b0b;
     font-size: clamp(10px, 2vw, 1.7rem);
     bottom: 3.5%;
     left: 4%;
@@ -489,5 +678,51 @@ main{
     background-image: url(../Images/types/Water.png);
     background-size: 100%;
 }
+.Linkedin{
+    background-image: url(../Images/types/Linkedin.png);
+    background-size: 100%;
+}
+.Github{
+    background-image: url(../Images/types/Github.png);
+    background-size: 100%;
+}
 
 /*--End Pokemon Types--*/
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-5px); }
+    20% { transform: translateX(5px); }
+    30% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    60% { transform: translateX(5px); }
+    70% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    90% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+
+.slide-in-blurred-bottom {
+	animation: slide-in-blurred-bottom 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+
+@keyframes slide-rotate-hor-bottom {
+    0% {
+      transform: translateY(0) rotateX(0deg);
+    }
+    100% {
+      transform: translateY(150px) rotateX(90deg);
+    }
+  }
+
+  @keyframes slide-rotate-hor-bottom2 {
+    0% {
+      transform: translateY(0) rotateX(0deg);
+    }
+    100% {
+      transform: translateY(150px) rotateX(90deg);
+    }
+  }
+  

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+
+
     <!--links-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +25,36 @@
     <title>Pokedex</title>
 </head>
 <body>
+    <div id="overlay"></div>
+
+    <div class="teamRocket">
+        <img src="Images/memberRocket.png" id="member" alt="memberRocket_team" class="shake-horizontal memberRocket">
+        <img src="Images/bush.png" alt="bushRocket_team" id="bushRocket_team" class="bush shake-horizontal">
+    </div>
+
+    <div class="jigglypuff-box" id="jigglypuff-box">
+
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/39.gif" class="jigglypuff">
+
+        <div class="jigglyShadow"></div>
+
+        <audio id="myAudio">
+            <source src="/Songs/jigglypuffSong.mp3" type="audio/mpeg">
+        </audio>
+        
+    </div>
+    
+    <div id="music" class="music">
+        
+        <img class="musicON" id="musicON" src="/Images/Icons/music.png">
+        <img class="musicOFF" id="musicOFF" src="/Images/Icons/musicOFF.png">
+
+        <audio id="myMusic">
+            <source src="/Songs/musicTheme.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+    
     <main>
         <div class="container">
             <div class="container_1">
@@ -30,6 +62,7 @@
                 <div id="info" class=" info"><p>i</p></div>
             
                 <img src="#" alt="pokedex" class=" pokemon_image">
+                <img src="/Images/wellGif.gif" alt="wellImage" class=" wellImage">
                 
                 <h1 class=" pokemon_data">
                     <span class=" pokemon_number"></span> -
@@ -59,6 +92,8 @@
 
                 <div id="pokemon_type" class="Type Grass"></div>
                 <div id="pokemon_type2" class="Type2 Poison"></div>
+                <a href="https://www.linkedin.com/in/wellingtonlima37/" target="_blank" class="linkedin"></a>
+                <a href="https://github.com/WelIingtonLima" target="_blank" class="github"></a>
                 <img src="Images/pokedex_2.png" alt="pokedex" class="pokedex">
                 
                 <div class="stats">
@@ -76,14 +111,16 @@
 
             </div><!--container_2-->
             
-            <a href="https://www.linkedin.com/in/wellingtonlima37/" target="_blank" class=" penSing">Wellington Lima</a>
+            <div class=" penSing">Wellington Lima</a>
             
         </div><!--container-->
-        
-        
+
         <div class="clear"></div>
+        
     </main> 
+
 </body>
+
 
 <div class="sing">GIF By Wellington Lima</div>
 </html>
