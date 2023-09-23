@@ -502,7 +502,7 @@ main{
 }
 
 .backActive.info{
-    cursor: url('/Images/cursor/hand2.png'), pointer;
+    cursor: url('../Images/cursor/hand2.png'), pointer;
     position: absolute;
     left:38%;
     bottom: 84%;
@@ -515,7 +515,7 @@ main{
     border:1px  solid #000;
     font-family: 'VT323', monospace;
 }
-jigg
+
 .backActive.info p {
     padding-top: 7%;
     font-size: clamp(1px, 2vw, 60px);
