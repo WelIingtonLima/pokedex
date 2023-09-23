@@ -8,12 +8,12 @@
     
 }
 html{
-    cursor: url('Images/cursor/left_ptr.png'), default;
+    cursor: url('../Images/cursor/left_ptr.png'), default;
     overflow: hidden;
 }
 body{
-    cursor: url('Images/cursor/left_ptr.png'), default;
-    background-image: url('..Images/fundo.gif');
+    cursor: url('../Images/cursor/left_ptr.png'), default;
+    background-image: url('../Images/fundo.gif');
     background-size: auto;
     background-repeat:no-repeat;
     background-position-y: -90px;
@@ -150,7 +150,7 @@ main{
     transform: translate(-63%, 20%);
     height: 6%;
     width: 12%;
-    cursor: url('Images/cursor/hand2.png'), pointer;
+    cursor: url('../Images/cursor/hand2.png'), pointer;
 }
 
 .github{
@@ -161,7 +161,7 @@ main{
     transform: translate(-63%, 20%);
     height: 6%;
     width: 12%;
-    cursor: url('Images/cursor/hand2.png'), pointer;
+    cursor: url('../Images/cursor/hand2.png'), pointer;
 }
 
 .lamp1{
@@ -213,7 +213,7 @@ main{
 }
 
 .info{
-    cursor: url('Images/cursor/hand2.png'), pointer;
+    cursor: url('../Images/cursor/hand2.png'), pointer;
     position: absolute;
     left:75%;
     bottom: 84%;
@@ -244,7 +244,7 @@ main{
 }
 
 .music{
-    cursor: url('Images/cursor/hand2.png'), pointer;
+    cursor: url('../Images/cursor/hand2.png'), pointer;
     position: absolute;
     left:50%;
     bottom: 88%;
@@ -274,7 +274,7 @@ main{
 }
 
 .input_search{
-    cursor: url('Images/cursor/xterm.png'),text;
+    cursor: url('../Images/cursor/xterm.png'),text;
     width: 100%;
     padding: 3%;
     outline: none;
@@ -307,18 +307,18 @@ main{
     color: white;
     background-color: #444;
     box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
-    cursor: url('Images/cursor/hand2.png'), pointer;
+    cursor: url('../Images/cursor/hand2.png'), pointer;
 
 }
 
 .button:active{
-    cursor: url('Images/cursor/hand4.png'), pointer;
+    cursor: url('../Images/cursor/hand4.png'), pointer;
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
 }
 
 .music:active{
-    cursor: url('Images/cursor/hand4.png'), pointer;
+    cursor: url('../Images/cursor/hand4.png'), pointer;
     box-shadow: inset -4px 4px 0 #a88100;
     
 }
@@ -333,11 +333,11 @@ main{
 }
 
 .info:active{
-    cursor: url('Images/cursor/hand4.png'), pointer;
+    cursor: url('../Images/cursor/hand4.png'), pointer;
 }
 
 .linkedin:active{
-    cursor: url('Images/cursor/hand4.png'), pointer;
+    cursor: url('../Images/cursor/hand4.png'), pointer;
 }
 
 .lamp2{
@@ -358,7 +358,7 @@ main{
     font-size:35px;
     left: 1%;
     bottom: 1%;
-    cursor: url('Images/cursor/left_ptr.png'), default;
+    cursor: url('../Images/cursor/left_ptr.png'), default;
 }
 
 .penSing{
@@ -386,7 +386,7 @@ main{
 }
 
 .bush   {
-    cursor: url('Images/cursor/hand3.png'), pointer;
+    cursor: url('/Images/cursor/hand3.png'), pointer;
     position: absolute;
     width: 250PX;
     top: 0px;
@@ -403,7 +403,7 @@ main{
     width: 150px;
     align-items: center;
     text-align: center;
-    cursor: url('Images/cursor/microfone.png'), pointer;
+    cursor: url('/Images/cursor/microfone.png'), pointer;
 }
 
 .jigglypuff{
@@ -502,7 +502,7 @@ main{
 }
 
 .backActive.info{
-    cursor: url('Images/cursor/hand2.png'), pointer;
+    cursor: url('/Images/cursor/hand2.png'), pointer;
     position: absolute;
     left:38%;
     bottom: 84%;
@@ -515,7 +515,7 @@ main{
     border:1px  solid #000;
     font-family: 'VT323', monospace;
 }
-
+jigg
 .backActive.info p {
     padding-top: 7%;
     font-size: clamp(1px, 2vw, 60px);
@@ -545,7 +545,7 @@ main{
 }
 
 .info:active{
-    cursor: url('Images/cursor/hand4.png'), pointer;
+    cursor: url('../Images/cursor/hand4.png'), pointer;
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
 }
@@ -584,106 +584,106 @@ main{
 
 
 .Empty{
-    background-image: url(..Images/types/Empty.png);
+    background-image: url(../Images/types/Empty.png);
     background-size: 100%;
 }
 
 .Normal{
-    background-image: url(..Images/types/Normal.png);
+    background-image: url(../Images/types/Normal.png);
     background-size: 100%;
 }
 
 .Fire{
-    background-image: url(..Images/types/Fire.png);
+    background-image: url(../Images/types/Fire.png);
     background-size: 100%;
 }
 
 .Bug{
-    background-image: url(..Images/types/Bug.png);
+    background-image: url(../Images/types/Bug.png);
     background-size: 100%;
 }
 
 .Dark{
-    background-image: url(..Images/types/Dark.png);
+    background-image: url(../Images/types/Dark.png);
     background-size: 100%;
 }
 
 .Dragon{
-    background-image: url(..Images/types/Dragon.png);
+    background-image: url(../Images/types/Dragon.png);
     background-size: 100%;
 }
 
 .Electric{
     display: block;
-    background-image: url(..Images/types/Electric.png);
+    background-image: url(../Images/types/Electric.png);
     background-size: 100%;
 }
 
 .Fairy{
-    background-image: url(..Images/types/Fairy.png);
+    background-image: url(../Images/types/Fairy.png);
     background-size: 100%;
 }
 
 .Fighting{
-    background-image: url(..Images/types/Fighting.png);
+    background-image: url(../Images/types/Fighting.png);
     background-size: 100%;
 }
 
 .Flying{
-    background-image: url(..Images/types/Flying.png);
+    background-image: url(../Images/types/Flying.png);
     background-size: 100%;
 }
 
 .Ghost{
-    background-image: url(..Images/types/Ghost.png);
+    background-image: url(../Images/types/Ghost.png);
     background-size: 100%;
 }
 
 .Grass{
-    background-image: url(..Images/types/Grass.png);
+    background-image: url(../Images/types/Grass.png);
     background-size: 100%;
 }
 
 .Ground{
-    background-image: url(..Images/types/Ground.png);
+    background-image: url(../Images/types/Ground.png);
     background-size: 100%;
 }
 
 .Ice{
-    background-image: url(..Images/types/Ice.png);
+    background-image: url(../Images/types/Ice.png);
     background-size: 100%;
 }
 
 .Poison{
-    background-image: url(..Images/types/Poison.png);
+    background-image: url(../Images/types/Poison.png);
     background-size: 100%;
 }
 
 .Psychic{
-    background-image: url(..Images/types/Psychic.png);
+    background-image: url(../Images/types/Psychic.png);
     background-size: 100%;
 }
 
 .Rock{
-    background-image: url(..Images/types/Rock.png);
+    background-image: url(../Images/types/Rock.png);
     background-size: 100%;
 }
 
 .Steel{
-    background-image: url(..Images/types/Stell.png);
+    background-image: url(../Images/types/Stell.png);
     background-size: 100%;
 }
 
 .Water{
-    background-image: url(..Images/types/Water.png);
+    background-image: url(../Images/types/Water.png);
     background-size: 100%;
 }
 .Linkedin{
-    background-image: url(..Images/types/Linkedin.png);
+    background-image: url(../Images/types/Linkedin.png);
     background-size: 100%;
 }
 .Github{
-    background-image: url(..Images/types/Github.png);
+    background-image: url(../Images/types/Github.png);
     background-size: 100%;
 }
 

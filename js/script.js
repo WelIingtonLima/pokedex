@@ -139,9 +139,6 @@ async function renderPokemon(inputValue) {
         wellImage.style.display = 'none';
         pokemonImage.style.display = 'block';
 
-
-        console.log(pokemon);
-
     }
 
     else {
