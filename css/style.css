@@ -393,7 +393,7 @@ main{
 }
 
 .bush:active{
-    cursor: url('Images/cursor/hand5.png'), pointer;
+    cursor: url('/Images/cursor/hand5.png'), pointer;
 }
 
 .jigglypuff-box{
