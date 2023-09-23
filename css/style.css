@@ -386,14 +386,14 @@ main{
 }
 
 .bush   {
-    cursor: url('/Images/cursor/hand3.png'), pointer;
+    cursor: url('../Images/cursor/hand3.png'), pointer;
     position: absolute;
     width: 250PX;
     top: 0px;
 }
 
 .bush:active{
-    cursor: url('/Images/cursor/hand5.png'), pointer;
+    cursor: url('../Images/cursor/hand5.png'), pointer;
 }
 
 .jigglypuff-box{
@@ -403,7 +403,7 @@ main{
     width: 150px;
     align-items: center;
     text-align: center;
-    cursor: url('/Images/cursor/microfone.png'), pointer;
+    cursor: url('../Images/cursor/microfone.png'), pointer;
 }
 
 .jigglypuff{
